@@ -1,0 +1,25 @@
+<p>Let's simplify it!</p>
+
+<pre class="fragment"><code>class LoginLoggerListener
+{
+    // ...
+    public function logLogin(User $user)
+    {
+        $this->logger->log('User ' . $user->getId() . ' logged in');
+    }
+}</code></pre>
+
+<pre class="fragment"><code>class LoginNewsMailerListener
+{
+    // ...
+    public function sendNewsOnLogin(User $user)
+    {
+        if ($this->userDb->getLastLogin($user) < new DateTime('-1 week')) {
+            $this->mailer->sendNews($user);
+        }
+    }
+}</code></pre>
+
+<p class="fragment">And so on...</p>
+
+// https://gist.github.com/Ocramius/fdc869a46db17eea108f

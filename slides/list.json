@@ -1,4 +1,10 @@
 [
     "index.md",
-    "the-zendeventmanager.html"
+    "event-manager/010-the-zendeventmanager.html",
+    "event-manager/020-the-ccc-problem.html",
+    "event-manager/030-ccc-example-initial-case.html",
+    "event-manager/040-ccc-example-logging.html",
+    "event-manager/050-ccc-example-feature-creep.html",
+    "event-manager/060-ccc-simplifying.html",
+    "event-manager/070-ccc-using-the-event-manager.html"
 ]

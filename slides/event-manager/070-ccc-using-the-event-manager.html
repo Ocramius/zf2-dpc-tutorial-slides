@@ -1,0 +1,8 @@
+<p>We also need to log authentication...</p>
+
+<pre><code>public function logIn(User $user)
+{
+    $this->authService->setIdentity($user);
+
+    $this->eventManager->trigger('login', $this, ['user' => $user]);
+}</code></pre>
