@@ -1,0 +1,13 @@
+<p>Listeners are triggered in the order they are registered when no priority is given:</p>
+
+<pre><code>$eventManager = new EventManager();
+
+$eventManager->attach('event-name', function () {
+    echo 'Hello ';
+});
+
+$eventManager->attach('event-name', function () {
+    echo 'World!';
+});
+
+$eventManager->trigger('event-name');</code></pre>
