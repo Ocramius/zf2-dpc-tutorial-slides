@@ -1,7 +1,12 @@
 <pre><code>interface EventManagerInterface
 {
     /** @return ResponseCollection */
-    public function trigger($event, $target = null, $args = [], $callback = null);
+    public function trigger(
+        $event,
+        $target = null,
+        $args = [],
+        $callback = null
+    );
 
     public function attach($listener, $callback = null, $priority = 1);
 
