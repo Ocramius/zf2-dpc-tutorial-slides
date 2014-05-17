@@ -1,0 +1,7 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "ZF2: From n00b to pro",
+    "packageVersion": "1.0.0",
+    "useSass": true
+  }
+}
