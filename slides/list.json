@@ -16,5 +16,6 @@
     "event-manager/interfaces/020-event.html",
     "event-manager/interfaces/030-shared-event-manager.html",
 
-    "event-manager/priorities/010-default-listener-sorting.html"
+    "event-manager/priorities/010-default-listener-sorting.html",
+    "event-manager/priorities/020-listener-priority.html"
 ]
