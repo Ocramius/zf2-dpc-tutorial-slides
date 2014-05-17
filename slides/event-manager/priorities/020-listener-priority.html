@@ -1,13 +1,17 @@
-<p>Listeners are triggered in the order they are registered if no priority is set:</p>
+<p>Listeners are triggered by priority</p>
 
 <pre><code>$eventManager = new EventManager();
 
 $eventManager->attach('event-name', function () {
     echo 'Hello ';
-});
+}, -100);
 
 $eventManager->attach('event-name', function () {
     echo 'World!';
-});
+}, 100);
 
 $eventManager->trigger('event-name');</code></pre>
+
+<p class="fragment">Higher priority = before</p>
+
+<p class="fragment">Default priority = <code>1</code></p>
