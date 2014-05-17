@@ -1,12 +1,12 @@
 [
     "index.md",
     "event-manager/010-the-zendeventmanager.html",
-    "event-manager/020-the-ccc-problem.html",
-    "event-manager/030-ccc-example-initial-case.html",
-    "event-manager/040-ccc-example-logging.html",
-    "event-manager/050-ccc-example-feature-creep.html",
-    "event-manager/060-ccc-simplifying.html",
-    "event-manager/070-ccc-using-the-event-manager.html",
-    "event-manager/080-ccc-wiring-it-together.html",
-    "event-manager/090-ccc-links.html"
+    "event-manager/ccc/020-the-ccc-problem.html",
+    "event-manager/ccc/030-ccc-example-initial-case.html",
+    "event-manager/ccc/040-ccc-example-logging.html",
+    "event-manager/ccc/050-ccc-example-feature-creep.html",
+    "event-manager/ccc/060-ccc-simplifying.html",
+    "event-manager/ccc/070-ccc-using-the-event-manager.html",
+    "event-manager/ccc/080-ccc-wiring-it-together.html",
+    "event-manager/ccc/090-ccc-links.html"
 ]
