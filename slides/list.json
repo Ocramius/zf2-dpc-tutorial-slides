@@ -17,5 +17,8 @@
     "event-manager/interfaces/030-shared-event-manager.html",
 
     "event-manager/priorities/010-default-listener-sorting.html",
-    "event-manager/priorities/020-listener-priority.html"
+    "event-manager/priorities/020-listener-priority.html",
+
+    "event-manager/propagation/010-stopping-event-propagation.html",
+    "event-manager/propagation/020-callback-stopping-event-propagation.html"
 ]
