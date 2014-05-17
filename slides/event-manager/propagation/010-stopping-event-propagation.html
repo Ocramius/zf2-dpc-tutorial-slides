@@ -1,0 +1,15 @@
+<p>Event propagation can be stopped:</p>
+
+<pre><code>$eventManager = new EventManager();
+
+$eventManager->attach('event-name', function ($event) {
+    echo 'Hello ';
+
+    $event->stopPropagation(true);
+});
+
+$eventManager->attach('event-name', function () {
+    echo 'World! ';
+});
+
+$eventManager->trigger('event-name');</code></pre>
