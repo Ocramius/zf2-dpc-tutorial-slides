@@ -1,0 +1,18 @@
+<pre><code>interface EventInterface
+{
+    /** @return string */
+    public function getName();
+
+    /** @return mixed */
+    public function getTarget();
+
+    /** @return array */
+    public function getParams();
+
+    public function stopPropagation($flag = true);
+
+    public function propagationIsStopped();
+
+    // more stuff ...
+}</code></pre>
+        
