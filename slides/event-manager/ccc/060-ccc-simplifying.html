@@ -1,0 +1,27 @@
+<p>Let's simplify it!</p>
+
+<pre class="fragment"><code>class LoginLoggerListener
+{
+    // ...
+    public function logLogin($event)
+    {
+        $user = $event->getParam('user');
+
+        $this->logger->log('User ' . $user->getId() . ' logged in');
+    }
+}</code></pre>
+
+<pre class="fragment"><code>class LoginNewsMailerListener
+{
+    // ...
+    public function sendNewsOnLogin($event)
+    {
+        $user = $event->getParam('user');
+
+        if ($this->userDb->getLastLogin($user) < new DateTime('-1 week')) {
+            $this->mailer->sendNews($user);
+        }
+    }
+}</code></pre>
+
+<p class="fragment">And so on...</p>

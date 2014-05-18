@@ -1,0 +1,25 @@
+<p>Event propagation can be stopped also from a callback on the trigger side:</p>
+
+<pre><code>$eventManager = new EventManager();
+
+$eventManager->attach('event-name', function () {
+    return 'Hello ';
+});
+
+$eventManager->attach('event-name', function () {
+    return 'World! ' . PHP_EOL;
+});
+
+// just run it as usual
+$eventManager->trigger('event-name', null, [], function ($result) {
+    echo $result;
+});
+
+// stop after the first listener
+$eventManager->trigger('event-name', null, [], function ($result) {
+    echo $result;
+
+    return true;
+});</code></pre>
+
+<p class="fragment">Also called <q>short-circuiting</q></p>

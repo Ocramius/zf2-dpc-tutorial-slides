@@ -1,0 +1,8 @@
+<p>Introducing the event manager...</p>
+
+<pre><code>public function logIn(User $user)
+{
+    $this->authService->setIdentity($user);
+
+    $this->eventManager->trigger('login', $this, ['user' => $user]);
+}</code></pre>

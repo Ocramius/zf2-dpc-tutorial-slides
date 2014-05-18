@@ -1,4 +1,24 @@
 [
     "index.md",
-    "the-zendeventmanager.html"
+
+    "event-manager/010-the-zendeventmanager.html",
+
+    "event-manager/ccc/020-the-ccc-problem.html",
+    "event-manager/ccc/030-ccc-example-initial-case.html",
+    "event-manager/ccc/040-ccc-example-logging.html",
+    "event-manager/ccc/050-ccc-example-feature-creep.html",
+    "event-manager/ccc/060-ccc-simplifying.html",
+    "event-manager/ccc/070-ccc-using-the-event-manager.html",
+    "event-manager/ccc/080-ccc-wiring-it-together.html",
+    "event-manager/ccc/090-ccc-links.html",
+
+    "event-manager/interfaces/010-event-manager.html",
+    "event-manager/interfaces/020-event.html",
+    "event-manager/interfaces/030-shared-event-manager.html",
+
+    "event-manager/priorities/010-default-listener-sorting.html",
+    "event-manager/priorities/020-listener-priority.html",
+
+    "event-manager/propagation/010-stopping-event-propagation.html",
+    "event-manager/propagation/020-callback-stopping-event-propagation.html"
 ]

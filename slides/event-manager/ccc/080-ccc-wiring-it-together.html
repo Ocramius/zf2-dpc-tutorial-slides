@@ -1,0 +1,13 @@
+<p>... and wiring it together</p>
+
+<pre><code>$eventManager = new Zend\EventManager\EventManager();
+
+$loggerListener     = new LoginLoggerListener(/* ... */);
+$newsMailerListener = new LoginNewsMailerListener(/* ... */);
+
+$eventManager->attach('login', [$loggerListener, 'logLogin']);
+$eventManager->attach('login', [$newsMailerListener, 'sendNewsOnLogin']);
+
+$userService = new UserService(/* ... */, $eventManager);</code></pre>
+
+<p class="fragment">Et voilà!</p>

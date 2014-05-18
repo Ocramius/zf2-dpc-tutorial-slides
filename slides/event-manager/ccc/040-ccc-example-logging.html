@@ -1,0 +1,12 @@
+<p>We also need to log authentication...</p>
+
+<pre><code>class UserService
+{
+    // ...
+    public function logIn(User $user)
+    {
+        $this->authService->setIdentity($user);
+
+        $this->logger->log('User ' . $user->getId() . ' logged in');
+    }
+}</code></pre>

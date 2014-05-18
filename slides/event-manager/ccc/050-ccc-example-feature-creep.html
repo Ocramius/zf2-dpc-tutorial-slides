@@ -1,0 +1,16 @@
+<p>... and we get more feature requests over time</p>
+
+<pre><code>public function logIn(User $user)
+{
+    $this->authService->setIdentity($user);
+
+    $this->logger->log('User ' . $user->getId() . ' logged in');
+
+    if ($this->userDb->getLastLogin($user) < new DateTime('-1 week')) {
+        $this->mailer->sendNews($user);
+    }
+
+    $this->userDb->incrementActiveUsers();
+    $this->flashMessenger->addMessage('Welcome, ' . $user->getName());
+    $this->notificationService->notifyFriendsOfLogin($user);
+}</code></pre>
