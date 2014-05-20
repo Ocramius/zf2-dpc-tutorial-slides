@@ -1,8 +1,12 @@
 [
+
     "index.md",
 
-    "event-manager/010-the-zendeventmanager.html",
 
+    "introduction/roave.html",
+    "introduction/what.md",
+
+    "event-manager/010-the-zendeventmanager.html",
     "event-manager/ccc/020-the-ccc-problem.html",
     "event-manager/ccc/030-ccc-example-initial-case.html",
     "event-manager/ccc/040-ccc-example-logging.html",
