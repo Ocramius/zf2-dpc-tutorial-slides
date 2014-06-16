@@ -1,74 +1,442 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>ZF2: From n00b to pro</title>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme.css" id="theme">
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-        document.write('<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">');
-    </script>
-    <!--[if lt IE 9]>
-    <script src="lib/js/html5shiv.js"></script>
-    <![endif]-->
-</head>
-<body>
-<div class="reveal">
-    <div class="slides">
-        <section data-markdown="slides/index.md"></section>
-        <section data-html="slides/the-zendeventmanager.html"></section>
-    </div>
-</div>
+    <head>
+        <meta charset="utf-8">
+        <title>ZF2: From n00b to pro</title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          document.write( '<link rel="stylesheet" href="bower_components/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                
+                    
+                        
+    <section data-markdown="slides/index.md"></section>
 
-<script src="bower_components/reveal.js/lib/js/head.min.js"></script>
-<script src="bower_components/reveal.js/js/reveal.min.js"></script>
-<script>
-    // Configure Reveal
-    // Full list of configuration options available here:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
 
-        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/introduction/roave.html"></section>
 
-        // Optional libraries used to extend on reveal.js
-        dependencies: [
-            { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function () {
-                return !document.body.classList;
-            } },
-            { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function () {
-                return !!document.querySelector('[data-markdown]');
-            } },
-            { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function () {
-                return !!document.querySelector('[data-markdown]');
-            } },
-            { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function () {
-                hljs.initHighlightingOnLoad();
-            } },
-            { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function () {
-                return !!document.body.classList;
-            } },
-            { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function () {
-                return !!document.body.classList;
-            } },
-            // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-            //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
-            { src: 'js/loadhtmlslides.js', condition: function () {
-                return !!document.querySelector('[data-html]');
-            } }
-        ]
-    });
-</script>
-</body>
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/introduction/what.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/introduction/pair.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/introduction/install.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/introduction/skeleton.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/introduction/theory.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/010-the-zendeventmanager.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/020-the-ccc-problem.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/030-ccc-example-initial-case.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/040-ccc-example-logging.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/050-ccc-example-feature-creep.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/060-ccc-simplifying.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/070-ccc-using-the-event-manager.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/080-ccc-wiring-it-together.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/ccc/090-ccc-links.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/interfaces/010-event-manager.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/interfaces/020-event.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/interfaces/030-shared-event-manager.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/priorities/010-default-listener-sorting.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/priorities/020-listener-priority.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/propagation/010-stopping-event-propagation.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/event-manager/propagation/020-callback-stopping-event-propagation.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/service-manager/servicemanager-intro.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-intro.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-1.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-2.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-3.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-4.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-5.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-6.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/module-manager/modulemanager-7.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-intro.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-1.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-2.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-3.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-4.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-5.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-6.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-7.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-8.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-9.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-10.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/router/router-11.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/exercise-1/exercise-1-intro.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/exercise-1/exercise-1-result.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/exercise-1/exercise-1-code-1.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/exercise-1/exercise-1-code-2.html"></section>
+
+
+                    
+                    
+                
+            </div>
+        </div>
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
+    </body>
 </html>

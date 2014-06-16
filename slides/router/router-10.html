@@ -1,0 +1,33 @@
+<h4>MAKE THIS LOOK BETTER</h4>
+<pre><code>'base' => [
+    'type' => 'literal',
+    'options' => [
+        'route' => '/ghostbuster',
+        'defaults' => [
+            'controller' => 'Ghostbuster',
+            'action' => 'base',
+        ]
+    ],
+    'may_terminate' => true,
+    'child_routes' => [
+        'people' => [
+            'type' => 'segment',
+            'options' => [
+                'route' => '/[:name]',
+                'constraints' => [
+                    'name' => '[a-zA-Z0-9_-]+'
+                ],
+                'defaults' => [
+                    'action' => 'people',
+                ],
+            ],
+        ],
+    ],
+],
+</code></pre>
+
+<ul>
+    <li><code>/ghostbuster</code> will match <code>base</code> route</li>
+    <li><code>/ghostbuster/ray</code> will match <code>people</code> route</li>
+    <li><code>constraints</code> key allows regex matching of parameters</li>
+</ul>

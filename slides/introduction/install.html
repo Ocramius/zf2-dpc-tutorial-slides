@@ -1,0 +1,21 @@
+<h2>Installing</h2>
+<p class="left">if $wifi:</p>
+<pre>
+curl -s https://getcomposer.org/installer | php --
+php composer.phar create-project -sdev --repository-url="https://packages.zendframework.com" zendframework/skeleton-application path/to/install
+</pre>
+<br>
+<div class="fragment">
+    <p class="left">else:</p>
+
+    <p>$pendrive;</p>
+</div>
+
+<div class="fragment">
+    <br>
+
+    <h3>Setup your vhost or (php 5.4+):</h3>
+<pre>
+php -S 127.0.0.1:80 path/to/install/public
+</pre>
+</div>

@@ -1,0 +1,22 @@
+<h2><code>Zend\Router</code></h2>
+<p>Configured by any <code>router</code> key in the merged config</p>
+<pre><code>[
+    'router' => [
+        'routes' => [
+            'home' => [
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => [
+                    'route'    => '/',
+                    'defaults' => [
+                        'controller' => 'Application\Controller\Index',
+                        'action'     => 'index',
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+</code></pre>
+<code class="fragment margin">
+    / => Application\Controller\Index::indexAction()
+</code>

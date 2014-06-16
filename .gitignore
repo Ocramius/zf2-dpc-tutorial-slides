@@ -4,3 +4,4 @@ dist
 *.log
 .sass-cache
 vendor
+.idea

@@ -1,0 +1,13 @@
+<h4><code>Zend\Mvc\Router\Http\Regex</code></h4>
+<p>Uses a regular expression to match against the URI</p>
+<p>Matched parts can be converted to named parameters using a spec</p>
+<pre><code>'regex' => '/ghostbuster/(?&LT;name>[a-zA-Z0-9_-]+)(\.(?&LT;type>(field|clerical|friend)))?',
+'spec' => '/ghostbuster/%name%.%type%'
+</code></pre>
+<ul>
+    <li class=""><code>/ghostbuster/janine.clerical</code> will match</li>
+    <li class=""><code>/ghostbuster/ray.catcher</code> will <i>NOT </i>match</li>
+</ul>
+
+<p class="margin"><code>name</code> parameter will be set to <code>janine</code></p>
+<p class="margin"><code>type</code> parameter will be set to <code>clerical</code></p>
