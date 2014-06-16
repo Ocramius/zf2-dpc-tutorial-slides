@@ -1,0 +1,13 @@
+<h2>Controller Manager</h2>
+        <p>To add to the confusion...</p>
+<p><code>
+Application\Controller\Index</code> is a key in the <code>ControllerManager</code> service locator.
+</p>
+<pre><code>function getControllerConfig() {
+    return [
+        'invokables' => [
+            'Application\Controller\Index' => 'Application\Controller\IndexController'
+        ]
+    ];
+}
+</code></pre>

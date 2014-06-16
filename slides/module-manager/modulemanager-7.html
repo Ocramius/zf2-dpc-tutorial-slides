@@ -1,0 +1,20 @@
+<h3><code>application.config.php</code></h3>
+<p>Tells the whole application how to behave and which modules to load</p>
+<pre><code>return [
+    'modules' => [
+        'Application',
+        'ZfcBase',
+        'ZfcUser',
+    ],
+    'module_listener_options' => [
+        'module_paths' => [
+            './module',
+            './vendor',
+        ],
+        'config_glob_paths' => [
+            'config/autoload/{,*.}{global,local}.php',
+        ],
+    ],
+    ...
+];
+</code></pre>

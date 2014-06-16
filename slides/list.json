@@ -8,6 +8,7 @@
     "introduction/pair.html",
     "introduction/install.html",
     "introduction/skeleton.md",
+    "introduction/theory.md",
 
     "event-manager/010-the-zendeventmanager.html",
     "event-manager/ccc/020-the-ccc-problem.html",
@@ -27,5 +28,36 @@
     "event-manager/priorities/020-listener-priority.html",
 
     "event-manager/propagation/010-stopping-event-propagation.html",
-    "event-manager/propagation/020-callback-stopping-event-propagation.html"
+    "event-manager/propagation/020-callback-stopping-event-propagation.html",
+
+
+    "service-manager/servicemanager-intro.html",
+
+    "module-manager/modulemanager-intro.html",
+    "module-manager/modulemanager-1.html",
+    "module-manager/modulemanager-2.html",
+    "module-manager/modulemanager-3.html",
+    "module-manager/modulemanager-4.html",
+    "module-manager/modulemanager-5.html",
+    "module-manager/modulemanager-6.html",
+    "module-manager/modulemanager-7.html",
+
+    "router/router-intro.html",
+    "router/router-1.html",
+    "router/router-2.html",
+    "router/router-3.html",
+    "router/router-4.html",
+    "router/router-5.html",
+    "router/router-6.html",
+    "router/router-7.html",
+    "router/router-8.html",
+    "router/router-9.html",
+    "router/router-10.html",
+    "router/router-11.html",
+
+    "exercise-1/exercise-1-intro.html",
+    "exercise-1/exercise-1-result.html",
+    "exercise-1/exercise-1-code-1.html",
+    "exercise-1/exercise-1-code-2.html"
+
 ]
