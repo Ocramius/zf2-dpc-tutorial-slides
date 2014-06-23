@@ -1,0 +1,18 @@
+<h5><code>config/autload/db.local.php</code></h5>
+<pre><code>return [
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn' => 'mysql:dbname=blog;host=127.0.01',
+        'driver_options' => [
+            PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+        ],
+        'username' => 'blog',
+        'password' => 'rayparkerjr',
+    ],
+    'service_manager' => [
+        'factories' => [
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+        ],
+    ],
+];</code></pre>
+

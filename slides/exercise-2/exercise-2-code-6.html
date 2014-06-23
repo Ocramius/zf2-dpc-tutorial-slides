@@ -1,0 +1,33 @@
+<h5 style="font-size: 70%;"><code>module/Blog/Module.php</code></h5>
+<pre><code>public function getControllerConfig()
+{
+    return [
+        'factories' => [
+            'Blog\Controller\Blog' => function(ControllerManager $controllerManager) {
+            $postService = $controllerManager->getServiceLocator()->get('Blog\Service\PostService');
+            return new BlogController($postService);
+        },
+    ];
+}</code></pre>
+
+<h5 style="font-size: 70%;"><code>module/Blog/src/Controller/BlogController.php</code></h5>
+<pre><code>namespace Blog\Controller;
+
+use Blog\Service\PostService;
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+
+class BlogController extends AbstractActionController
+{
+    /**
+    * @var PostService
+    */
+    protected $postService;
+
+    function __construct(PostService $postService)
+    {
+        $this->postService = $postService;
+    }
+}</code></pre>
+
+

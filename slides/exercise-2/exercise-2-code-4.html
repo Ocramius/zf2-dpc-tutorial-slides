@@ -1,0 +1,34 @@
+<h5 style="font-size: 70%;"><code>module/Blog/src/Blog/Service/PostService.php</code></h5>
+<pre><code>namespace Blog\Service;
+
+use Zend\Db\TableGateway\TableGateway;
+
+
+class PostService
+{
+
+    /**
+    * @var TableGateway
+    */
+    protected $postTable;
+
+    function __construct(TableGateway $postTable)
+    {
+        $this->postTable = $postTable;
+    }
+}</code></pre>
+
+<h5 style="font-size: 70%;"><code>module/Blog/Module.php</code></h5>
+<pre><code>public function getServiceConfig()
+{
+    return [
+        'factories' => [
+            'Blog\Service\PostService' => function(ServiceManager $serviceManager) {
+                $postTable = $serviceManager->get('PostTableGateway');
+                return new PostService($postTable);
+            }
+        ],
+    ];
+}
+</code></pre>
+

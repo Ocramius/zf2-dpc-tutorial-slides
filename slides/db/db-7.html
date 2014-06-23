@@ -1,0 +1,27 @@
+<h3><code>Zend\Db\TableGateway</code></h3>
+<p>Use a Service (Mapper) Layer:</p>
+
+<code>Controller Config</code>
+<pre><code>'GhostService' => function(ServiceManager $sm) {
+    $ghostTable = $sm->get('GhostTableGateway');
+    return new GhostService($postTable);
+},</code></pre>
+
+<code>Service Config</code>
+<pre><code>
+'Ghostbuster\Controller\Ghost' => function(ControllerManager $cm) {
+    $ghostService = $cm->getServiceLocator()->get('GhostService');
+    return new GhostController($ghostService);
+},
+</code></pre>
+
+<code>GhostController</code>
+<pre><code>public function __construct(GhostService $ghostService)
+{
+    $this->ghostService = $ghostService;
+}
+
+public function viewAction()
+{
+    $this->ghostService->findGhostById(666);
+}</code></pre>

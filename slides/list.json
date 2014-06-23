@@ -55,9 +55,36 @@
     "router/router-10.html",
     "router/router-11.html",
 
+
     "exercise-1/exercise-1-intro.html",
     "exercise-1/exercise-1-result.html",
     "exercise-1/exercise-1-code-1.html",
-    "exercise-1/exercise-1-code-2.html"
+    "exercise-1/exercise-1-code-2.html",
 
+
+    "db/db-intro.html",
+    "db/db-1.html",
+    "db/db-2.html",
+    "db/db-3.html",
+    "db/db-4.html",
+    "db/db-5.html",
+
+    "db/db-5-1.html",
+
+    "db/db-6.html",
+    "db/db-7.html",
+    "db/db-8.html",
+    "db/db-9.html",
+    "db/db-10.html",
+    "db/db-11.html",
+
+
+    "exercise-2/exercise-2-intro.html",
+    "exercise-2/exercise-2-result.html",
+    "exercise-2/exercise-2-code-1.html",
+    "exercise-2/exercise-2-code-2.html",
+    "exercise-2/exercise-2-code-3.html",
+    "exercise-2/exercise-2-code-4.html",
+    "exercise-2/exercise-2-code-5.html",
+    "exercise-2/exercise-2-code-6.html"
 ]

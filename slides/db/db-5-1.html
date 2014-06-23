@@ -1,0 +1,11 @@
+<h3><code>Zend\Db\TableGateway</code></h3>
+
+<p>Find all the clerical staff:</p>
+<pre><code>$clericalStaff = $tableGateway->select(['type' => 'clerical']);</code></pre>
+<p>Fire all the clerical staff:</p>
+<pre><code>$tableGateway->delete(['type' => 'clerical']);</code></pre>
+<p>Give all the Ghostbusters a capture:</p>
+<pre><code>$tableGateway->update(
+    ['captures' => new Expression('captures + 1')],
+    ['type' => 'ghostbuster']
+);</code></pre>

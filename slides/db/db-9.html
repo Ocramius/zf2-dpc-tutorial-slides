@@ -1,0 +1,23 @@
+<h3>Hydration</h3>
+<p>The act of turning an array into an object (and vice-versa)...</p>
+<p class="margin">because it's much easier to pass around objects than arrays.</p>
+<pre><code>$hydrator = new \Zend\Stdlib\Hydrator\ClassMethods();
+$data = ['name' => 'Egon', 'type' => 'Ghostbuster', 'captures' => 39];
+/** @var Ghostbuster $ghostbuster */
+$ghostbuster = $hydrator->hydrate($data, new Ghostbuster());</code></pre>
+<p>Entity:</p>
+<pre><code>class Ghostbuster
+{
+    protected $name;
+    protected $type;
+    protected $captures;
+
+    public function setCaptures($captures)
+    {
+        $this->captures = $captures;
+    }
+    public function getCaptures()
+    {
+        return $this->captures;
+    }
+    ...</code></pre>

@@ -1,0 +1,24 @@
+<h3><code>Zend\Db\TableGateway</code></h3>
+<p>Using:</p>
+
+<pre><code>'factories' => [
+    'Ghostbuster\Controller\Ghost' => function(ControllerManager $cm) {
+        $ghostTable = $cm->getServiceLocator()->get('GhostTable');
+        return new GhostController($ghostTable);
+    },
+],</code></pre>
+
+<code>GhostController</code>
+<pre><code>public function __construct(TableGateway $ghostTable)
+{
+    $this->ghostTable = $ghostTable;
+}
+
+public function viewAction()
+{
+    $this->ghostTable->select(['id' => 666]);
+}</code></pre>
+<div class="fragment" style="position:absolute; top:0px; left: 50px">
+    <img src="/images/slimer.gif" class="no-border" width="1000px">
+    <h3 style="color:red">DON'T DO THIS!!!</h3>
+</div>

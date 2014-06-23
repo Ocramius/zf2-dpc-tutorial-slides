@@ -1,0 +1,19 @@
+<h3><code>Zend\Db\Adapter</code></h3>
+<p>Provides a connection to the database <i>platform</i>, usually via configuration through the merged config</p>
+
+<code>config/db.local.config.php</code>
+<pre><code>
+return [
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn' => 'mysql:mydb=blog;host=127.0.01',
+        'username' => 'keymaster',
+        'password' => 'gatekeeper',
+    ],
+    'service_manager' => [
+        'factories' => [
+            'Zend\Db\Adapter\Adapter' => 'Zend\Db\Adapter\AdapterServiceFactory',
+        ],
+    ],
+];</code></pre>
+        <p class="margin fragment">DO NOT STORE IN YOUR VERSION CONTROL!!!</p>

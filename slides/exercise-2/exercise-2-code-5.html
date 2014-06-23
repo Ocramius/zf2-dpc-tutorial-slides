@@ -1,0 +1,22 @@
+<h5 style="font-size: 70%;"><code>module/Blog/Module.php</code></h5>
+<pre><code>public function getServiceConfig()
+{
+    return [
+        'factories' => [
+            'PostTableGateway' => function (ServiceManager $serviceManager) {
+                $adapter = $serviceManager->get('Zend\Db\Adapter\Adapter');
+                $hydrator           = new ClassMethods(true);
+                $rowObjectPrototype = new Post();
+                $resultSet          = new HydratingResultSet($hydrator, $rowObjectPrototype);
+                $tableGateway       = new TableGateway('post', $adapter, null, $resultSet);
+                return $tableGateway;
+            },
+            'Blog\Service\PostService' => function(ServiceManager $serviceManager) {
+                $postTable = $serviceManager->get('PostTableGateway');
+                return new PostService($postTable);
+            }
+        ],
+    ];
+}
+</code></pre>
+

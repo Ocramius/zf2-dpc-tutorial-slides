@@ -1,0 +1,10 @@
+<h3>Hydrating Results Sets</h3>
+<p>Just update your TableGateway definition in Service Manager:</p>
+<pre><code>'PostTableGateway' => function (ServiceManager $serviceManager) {
+    $adapter = $serviceManager->get('Zend\Db\Adapter\Adapter');
+    $hydrator = new ClassMethods(true);
+    $rowObjectPrototype = new Ghostbuster(); // Entity to hydrate
+    $resultSet = new HydratingResultSet($hydrator, $rowObjectPrototype);
+    $tableGateway = new TableGateway('people', $adapter, null, $resultSet);
+    return $tableGateway;
+}</code></pre>

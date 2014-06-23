@@ -1,0 +1,10 @@
+<h2>Hint</h2>
+<ul>
+    <li>Add a new <code>db</code> key to the merged config via a <code>config/autoload/db.local.php</code> file</li>
+    <li>Create folders in the modules src directory <code>Entity</code> & <code>Service</code></li>
+    <li>Create a new <code>Post</code> entity in the <code>Entity</code> folder, the entity should have same properties
+        as the table, and have getters and setters</li>
+    <li>Create a new <code>PostService</code> class that takes the <code>BlogTable</code> as a dependency (including SM definition)</li>
+    <li>Create a new <code>BlogTable</code> TableGateway - this will only need to be defined in the SM</li>
+    <li>Update the <code>BlogController</code> to take the <code>PostService</code> as a dependency, and pass it in via the Controller Manager</li>
+</ul>

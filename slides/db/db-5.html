@@ -1,0 +1,11 @@
+<h3><code>Zend\Db\TableGateway</code></h3>
+<p>Creating:</p>
+
+<pre><code>return [
+    'factories' => [
+        'GhostTableGateway' => function (ServiceManager $serviceManager) {
+            $adapter = $serviceManager->get('Zend\Db\Adapter\Adapter');
+            $tableGateway = new TableGateway('ghost', $adapter);
+        }
+    ],
+];</code></pre>
