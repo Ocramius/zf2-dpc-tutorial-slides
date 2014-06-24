@@ -1,0 +1,19 @@
+<p>Service Location:</p>
+
+<pre><code>class ElePHPant
+{
+    private $drunk = 0;
+
+    public function drinkUntilDrunk()
+    {
+        $truck = Registry::get('BeerTruck');
+
+        while ($this->drunk < 1) {
+            $beer = $beerTruck->deliverBeer();
+
+            $this->drunk += $beer->getLiters() * $beer->getGrade();
+        }
+
+        return 'HIC!';
+    }
+}</code></pre>

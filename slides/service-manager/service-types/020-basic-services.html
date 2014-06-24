@@ -1,0 +1,13 @@
+<h2>Basic Services</h2>
+
+<pre><code>$truck = new GuinnessTruck();
+
+$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config([
+        'services' => [
+            'BeerTruck' => $truck,
+        ],
+    ])
+);
+
+var_dump($truck === $serviceManager->get('BeerTruck'));</code></pre>

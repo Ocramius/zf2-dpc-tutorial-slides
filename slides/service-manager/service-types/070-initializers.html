@@ -1,0 +1,25 @@
+<h2>Initializers</h2>
+
+<pre><code>$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config([
+        'invokables' => [
+            'BeerTruck' => 'SimpleBeerTruck',
+        ],
+        'initializers' => [
+            function ($object) {
+                if ($object instanceof SimpleBeerTruck) {
+                    $truck->setPaint('blue');
+                }
+            },
+        ],
+    ])
+);
+
+var_dump($serviceManager->get('BeerTruck')->getPaint());</code></pre>
+
+<p class="fragment">
+    Allows you to apply initialization logic to every object
+    <strong>PRODUCED</strong> by the ServiceManager
+</p>
+
+<p class="fragment">Use carefully!</p>

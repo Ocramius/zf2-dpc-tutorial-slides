@@ -1,0 +1,15 @@
+<p>Configuring the Service Manager with arrays:</p>
+
+<pre><code>$config = [
+    'services' => [...],
+    'invokables' => [...],
+    'factories' => [...],
+    'abstract_factories' => [...],
+    'initializers' => [...],
+    'delegators' => [...],
+    'shared' => [...],
+];
+
+$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config($config);
+);</code></pre>

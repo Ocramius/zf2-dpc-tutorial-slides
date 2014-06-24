@@ -1,0 +1,11 @@
+<h2>Invokable Services</h2>
+
+<pre><code>$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config([
+        'invokables' => [
+            'BeerTruck' => 'GuinnessTruck,
+        ],
+    ])
+);
+
+var_dump($serviceManager->get('BeerTruck'));</code></pre>

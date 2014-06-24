@@ -1,0 +1,23 @@
+<p>Dependency Injection:</p>
+
+<pre><code>class ElePHPant
+{
+    private $truck;
+    private $drunk = 0;
+
+    public function __construct(BeerTruck $truck)
+    {
+        $this->truck = $truck;
+    }
+
+    public function drinkUntilDrunk()
+    {
+        while ($this->drunk < 1) {
+            $beer = $this->truck->deliverBeer();
+
+            $this->drunk += $beer->getLiters() * $beer->getGrade();
+        }
+
+        return 'HIC!';
+    }
+}</code></pre>

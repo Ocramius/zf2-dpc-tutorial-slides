@@ -1,0 +1,23 @@
+<h2>Abstract Factories</h2>
+<pre><code>class MyAbstractFactory implements AbstractFactoryInterface
+{
+    public function canCreateServiceWithName(ServiceLocatorInterface $serviceLocator, $name, $requestedName)
+    {
+        return fnmatch('*Truck', $requestedName);
+    }
+
+    public function createServiceWithName(ServiceLocatorInterface $serviceLocator, $name, $requestedName)
+    {
+        return new $requestedName; // overly simplified!
+    }
+}</code></pre>
+
+<pre><code>$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config([
+        'abstract_factories' => ['MyAbstractFactory'],
+    ])
+);
+
+var_dump($serviceManager->get('BeerTruck'));</code></pre>
+
+<p class="fragment">Useful for mapping multiple services in one shot!</p>
