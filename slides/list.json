@@ -31,7 +31,6 @@
     "event-manager/propagation/020-callback-stopping-event-propagation.html",
 
 
-    "service-manager/servicemanager-intro.html",
     "service-manager/010-the-zendservicemanager.html",
 
     "service-manager/dependency-injection/010-getting-dependencies.html",
@@ -54,7 +53,7 @@
     "service-manager/service-types/050-abstract-factories.html",
     "service-manager/service-types/060-shared-services.html",
     "service-manager/service-types/070-initializers.html",
-    "service-manager/service-types/080-delegators.html"
+    "service-manager/service-types/080-delegators.html",
 
     "module-manager/modulemanager-intro.html",
     "module-manager/modulemanager-1.html",
