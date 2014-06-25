@@ -1,0 +1,18 @@
+<h3>Handling:</h3>
+<pre><code>public function addAction()
+{
+    $form = new PostForm();
+    $ghostbuster = new Ghostbuster();
+    $form->setHydrator(new ClassMethods())->setObject($ghostbuster);
+    //hydation rocks!
+    if ($this->getRequest()->isPost()) { // form has been posted
+        $form->setData($this->getRequest()->getPost()->toArray());
+        if($form->isValid()) { // form validates so save it!
+            $this->ghostbusterService->savePost($form->getObject());
+            $this->redirect()->toRoute('view');
+        }
+    } else {
+        $form->bind($ghostbuster);
+    }
+    return new ViewModel(['form' => $form]);
+}</code></pre>

@@ -1,0 +1,23 @@
+<p>Add Some Validation</p>
+
+<pre><code>protected $inputFilter;
+...
+public function getInputFilter()
+{
+    if (!$this->inputFilter) {
+        $this->inputFilter = new InputFilter();
+        $this->inputFilter->add([
+            'name' => 'name', // same as name of element
+            'required' => 'true',
+            'filters' => [['name' => 'StringTrim']],
+            'validators' => [[
+                'name' => 'StringLength',
+                'options' => [
+                    'min' => 3,
+                    'max' => 64
+                ]
+            ]],
+        ]);
+    }
+    return $this->inputFilter;
+}</code></pre>

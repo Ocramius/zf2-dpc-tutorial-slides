@@ -1,0 +1,186 @@
+<h5><code>module/Blog/src/Blog/Form/PostForm.php</code></h5>
+<pre><code>namespace Blog\Form;
+
+use Zend\Form\Form;
+use Zend\InputFilter\InputFilter;
+
+class PostForm extends Form
+{
+
+    protected $inputFilter;
+
+    public function __construct()
+    {
+        parent::__construct('post');
+
+        $this->add(
+            [
+                'name' => 'id',
+                'type' => 'hidden'
+            ]
+        );
+
+        $this->add(
+            [
+                'name' => 'slug',
+                'type' => 'text',
+                'options' => [
+                    'label' => 'Slug'
+                ],
+                'attributes' => [
+                    'class' => 'form-control'
+                ],
+            ]
+        );
+
+    $this->add(
+        [
+            'name' => 'written_on',
+            'type' => 'text',
+            'options' => [
+                'label' => 'Written On'
+            ],
+            'attributes' => [
+            '   class' => 'form-control',
+                'readonly' => true
+            ],
+        ]
+    );
+
+    $this->add(
+        [
+            'name' => 'title',
+            'type' => 'text',
+            'options' => [
+                'label' => 'Title'
+            ],
+            'attributes' => [
+                'class' => 'form-control'
+            ],
+        ]
+    );
+
+    $this->add(
+        [
+            'name' => 'preview',
+            'type' => 'textarea',
+            'options' => [
+                'label' => 'Preview'
+            ],
+                'attributes' => [
+                'class' => 'form-control'
+            ],
+        ]
+    );
+
+    $this->add(
+        [
+            'name' => 'body',
+            'type' => 'textarea',
+            'options' => [
+                'label' => 'Body'
+            ],
+            'attributes' => [
+                'class' => 'form-control',
+                'rows' => 20
+            ],
+        ]
+    );
+
+    $this->add(
+        [
+            'name' => 'views',
+            'type' => 'hidden',
+            'value' => '0',
+        ]
+    );
+
+    $this->add(
+        [
+            'name' => 'submit',
+            'type' => 'submit',
+            'attributes' => [
+                'class' => 'btn btn-default margin-top'
+            ],
+        ]
+    );
+}
+
+public function getInputFilter()
+{
+    if (!$this->inputFilter) {
+        $this->inputFilter = new InputFilter();
+
+        $this->inputFilter->add(
+        [
+        'name' => 'slug',
+        'required' => 'true',
+        'filters' => [
+        ['name' => 'StringTrim'],
+        ],
+        'validators' => [
+        [
+        'name' => 'Regex',
+        'options' => [
+        'pattern' => '/^[a-z0-9-]+$/'
+        ]
+        ],
+        [
+        'name' => 'StringLength',
+        'options' => [
+        'min' => 3,
+        'max' => 64
+        ]
+        ]
+        ]
+        ]
+        );
+
+        $this->inputFilter->add(
+            [
+                'name' => 'title',
+                'required' => true,
+                'filters' => [
+                    [
+                        'name' => 'StringTrim',
+                        'name' => 'StripTags',
+                    ]
+                ],
+                'validators' => [
+                    [
+                        'name' => 'StringLength',
+                        'options' => [
+                            'min' => 3,
+                            'max' => 64
+                        ]
+                    ]
+                ]
+            ]
+        );
+
+        $this->inputFilter->add(
+            [
+                'name' => 'views',
+                'required' => false
+            ]
+        );
+
+        $this->inputFilter->add(
+            [
+                'name' => 'preview',
+                'required' => true,
+            ]
+        );
+
+        $this->inputFilter->add(
+            [
+                'name' => 'body',
+                'required' => true,
+            ]
+        );
+    }
+
+    return $this->inputFilter;
+    }
+
+}</code></pre>

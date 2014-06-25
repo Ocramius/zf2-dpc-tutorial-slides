@@ -1,0 +1,14 @@
+<h5><code>module/Blog/view/blog/add.phtml</code></h5>
+<pre><code><?php
+/** @var \Blog\Entity\Post $post */
+?>
+
+<h3>Add Post</h3>
+
+&lt;?php
+    $form->setAttribute('action', $this->url());
+    echo $this->form()->openTag($form);
+    echo $this->formCollection($form);
+    echo $this->form()->closeTag();
+?></code></pre>
+

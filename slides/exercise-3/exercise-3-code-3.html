@@ -1,0 +1,23 @@
+<h5 style="font-size: 70%;"><code>module/Blog/src/Blog/Controller/BlogController.php</code></h5>
+<pre><code>public function addAction()
+{
+    $form = new PostForm();
+    $post = new Post();
+
+    $form->setHydrator(new ClassMethods())->setObject($post);
+
+    if ($this->getRequest()->isPost()) {
+        $form->setData($this->getRequest()->getPost()->toArray());
+        if($form->isValid()) {
+            $this->postService->savePost($form->getObject());
+            $this->redirect()->toRoute('blog');
+        }
+    } else {
+        $form->bind($post);
+    }
+
+    $form->get('submit')->setValue('Add');
+
+    return new ViewModel(['post' => $post, 'form' => $form]);
+}</code></pre>
+

@@ -1,0 +1,11 @@
+<p>Render in the view!</p>
+
+<p><code>Controller</code></p>
+<pre><code>return new ViewModel(
+    ['form' => new MyForm()]
+);</code></pre>
+
+<p><code>View</code></p>
+<pre><code>echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();</code></pre>
