@@ -1,0 +1,16 @@
+<p>Service names are <strong>Normalized</strong></p>
+
+<pre><code>$service = $serviceManager->get('service-name');</code></pre>
+
+<p>Is the same as:</p>
+
+<pre><code>$service = $serviceManager->get('Service\\Name');</code></pre>
+
+<p>And the same as:</p>
+
+<pre><code>$service = $serviceManager->get('servicename');</code></pre>
+
+<p class="fragment">
+    Please don't rely on this, it was arguably a bad idea in first place,
+    and it will be removed :-(
+</p>

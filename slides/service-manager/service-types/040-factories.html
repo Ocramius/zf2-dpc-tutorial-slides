@@ -1,0 +1,23 @@
+<h2>Factories</h2>
+
+<pre><code>$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config([
+        'invokables' => [
+            'BreweryBrand' => 'Guinness',
+        ],
+        'factories' => [
+            'BeerTruck' => function ($serviceManager) {
+                return new BeerTruck($serviceManager->get('BreweryBrand'));
+            },
+        ],
+    ])
+);
+
+var_dump($serviceManager->get('BeerTruck'));</code></pre>
+
+<p class="fragment">Suited for anything that can't be instantiated directly</p>
+
+<p class="fragment">
+    A factory can either be a <code>callable</code> or the class name of a
+    <code>Zend\ServiceManager\FactoryInterface</code>
+</p>

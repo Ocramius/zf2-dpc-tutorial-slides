@@ -32,6 +32,29 @@
 
 
     "service-manager/servicemanager-intro.html",
+    "service-manager/010-the-zendservicemanager.html",
+
+    "service-manager/dependency-injection/010-getting-dependencies.html",
+    "service-manager/dependency-injection/020-direct-dependency-instantiation.html",
+    "service-manager/dependency-injection/030-service-location.html",
+    "service-manager/dependency-injection/040-dependency-injection.html",
+    "service-manager/dependency-injection/050-why-dependency-injection.html",
+    "service-manager/dependency-injection/060-why-service-location.html",
+
+    "service-manager/basic-usage/010-configuring-the-service-manager-programmatically.html",
+    "service-manager/basic-usage/020-configuring-the-service-manager-with-arrays.html",
+    "service-manager/basic-usage/030-fetching-a-service.html",
+    "service-manager/basic-usage/040-normalized-service-names.html",
+    "service-manager/basic-usage/050-shared-services.html",
+
+    "service-manager/service-types/010-service-types.html",
+    "service-manager/service-types/020-basic-services.html",
+    "service-manager/service-types/030-invokable-services.html",
+    "service-manager/service-types/040-factories.html",
+    "service-manager/service-types/050-abstract-factories.html",
+    "service-manager/service-types/060-shared-services.html",
+    "service-manager/service-types/070-initializers.html",
+    "service-manager/service-types/080-delegators.html"
 
     "module-manager/modulemanager-intro.html",
     "module-manager/modulemanager-1.html",
@@ -87,4 +110,5 @@
     "exercise-2/exercise-2-code-4.html",
     "exercise-2/exercise-2-code-5.html",
     "exercise-2/exercise-2-code-6.html"
+
 ]

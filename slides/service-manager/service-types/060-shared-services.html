@@ -1,0 +1,19 @@
+<h2>Shared Services</h2>
+
+<pre><code>$serviceManager = new Zend\ServiceManager\ServiceManager(
+    new Zend\ServiceManager\Config([
+        'invokables' => [
+            'BeerTruck' => 'SimpleBeerTruck',
+        ],
+        'shared' => [
+            'BeerTruck' => false,
+        ],
+    ])
+);
+
+$truck1 = $serviceManager->get('BeerTruck');
+$truck2 = $serviceManager->get('BeerTruck');
+
+var_dump($truck1 !== $truck2);</code></pre>
+
+<p class="fragment">Allows you to use the ServiceManager as a factory</p>
