@@ -8,6 +8,7 @@
 // Default mixins and settings -----------------
 @import "../../bower_components/reveal.js/css/theme/template/mixins";
 @import "../../bower_components/reveal.js/css/theme/template/settings";
+//@import "sky";
 
 // ---------------------------------------------
 
@@ -40,14 +41,15 @@ $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b
 // ---------------------------------------------
 
 // Background generator ------------------------
-@mixin bodyBackground() {
-  @include radial-gradient(rgba(28, 30, 32, 1), rgba(85, 90, 95, 1));
-}
+//@mixin bodyBackground() {
+//  @include radial-gradient(rgba(28, 30, 32, 1), rgba(85, 90, 95, 1));
+//}
 
 // ---------------------------------------------
 
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
+@import "../../bower_components/reveal.js/css/theme/source/sky";
 // ---------------------------------------------
 
 // See ../../bower_components/reveal.js/css/theme/README.md
