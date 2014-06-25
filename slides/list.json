@@ -18,7 +18,6 @@
     "event-manager/ccc/060-ccc-simplifying.html",
     "event-manager/ccc/070-ccc-using-the-event-manager.html",
     "event-manager/ccc/080-ccc-wiring-it-together.html",
-    "event-manager/ccc/090-ccc-links.html",
 
     "event-manager/interfaces/010-event-manager.html",
     "event-manager/interfaces/020-event.html",
@@ -30,6 +29,7 @@
     "event-manager/propagation/010-stopping-event-propagation.html",
     "event-manager/propagation/020-callback-stopping-event-propagation.html",
 
+    "event-manager/020-links.html",
 
     "service-manager/010-the-zendservicemanager.html",
 
