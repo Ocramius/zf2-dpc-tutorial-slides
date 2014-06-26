@@ -1,0 +1,20 @@
+<h2>View Paths</h2>
+<p>
+    By default, view names are built from the dispatched controller name:
+</p>
+<p class="fragment"><code>
+    &lt;root-namespace&gt;/&lt;controller-class-name&gt;/&lt;action&gt;
+</code></p>
+<p class="fragment">
+    So if <code>Blog\Controller\BlogController#postAction()</code> is executed the view
+    name will be ...
+</p>
+<p class="fragment">
+    <code>blog/blog/post</code>
+</p>
+<p class="fragment">
+    ... which in our case translates to view script ...
+</p>
+<p class="fragment">
+    <code>module/Blog/view/blog/blog/post.phtml</code>
+</p>

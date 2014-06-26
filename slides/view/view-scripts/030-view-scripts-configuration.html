@@ -1,0 +1,12 @@
+<h2>View Manager Configuration</h2>
+<p>
+    In order to get <code>Zend\Mvc</code> to find our scripts, we have to tell it where to find them
+    in our <code>config/module.config.php</code>:
+</p>
+<p class="fragment"><pre><code>
+'view_manager' => array(
+    'template_path_stack' => array(
+        __DIR__ . '/../view',
+    ),
+],
+</code></pre></p>

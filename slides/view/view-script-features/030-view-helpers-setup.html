@@ -1,0 +1,17 @@
+<h2>Where are View Helpers defined?</h2>
+<p>
+    View helpers are defined in a specific <code>ServiceManager</code>
+    (<code>PluginManager</code>) that is pre-configured.
+</p>
+
+<p class="fragment">
+    See the
+    <a
+        href="https://github.com/zendframework/zf2/blob/7688fab93de0b94c3469c798cbb2d36d301bfce3/library/Zend/View/HelperPluginManager.php"
+        target="_blank"
+    ><code>HelperPluginManager</code></a> for a list of pre-defined helpers.
+</p>
+
+<p class="fragment">
+    You can register your own helpers: it's just about configuring a specific service manager.
+</p>

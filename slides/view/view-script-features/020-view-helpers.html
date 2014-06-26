@@ -1,0 +1,14 @@
+<h2>View Helpers</h2>
+<p>
+    View helpers are utility methods that are available in view scripts:
+</p>
+<p class="fragment"><pre><code>&lt;?php
+
+&lt;a href="&lt;?= $this->escapeHtmlAttr($userDefinedUrl); ?&gt;
+    &lt;?= $this->escapeHtml($userDefinedText); ?&gt;
+&lt;/a&gt;
+</code></pre></p>
+
+<p class="fragment">
+    In this example <code>escapeHtml</code> and <code>escapeHtmlAttr</code> are helpers.
+</p>

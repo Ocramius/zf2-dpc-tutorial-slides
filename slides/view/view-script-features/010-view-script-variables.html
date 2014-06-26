@@ -1,0 +1,17 @@
+<h2>View Script Variables</h2>
+<p>
+    A view script is "filled" with variables from the <code>ViewModel</code>
+    that is returned by the controller.
+</p>
+<p class="fragment"><pre><code>public function indexAction()
+{
+    return new ViewModel(['foo' => 'bar']);
+}
+</code></pre></p>
+
+<p class="fragment"><pre><code>&lt;?php
+echo $foo;
+echo $this-&gt;foo;</code></pre></p>
+<p>
+    Both approaches work!
+</p>

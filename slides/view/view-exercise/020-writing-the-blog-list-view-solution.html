@@ -1,0 +1,11 @@
+<h2>Exercise: List all BlogPosts</h2>
+
+<p>in <pre>module/Blog/view/blog/blog/index.phtml</pre></p>
+<p><pre><code>&lt;?php foreach ($posts as $post): ?&gt;
+    &lt;hr/&gt;
+    &lt;a href="&lt;?php echo $this-&gt;url('post', ['slug' =&gt; $post-&gt;getSlug()]); ?&gt;"&gt;
+        &lt;h1&gt;&lt;?php echo $this-&gt;escapeHtml($post-&gt;getTitle()); ?&gt;&lt;/h1&gt;
+    &lt;/a&gt;
+    &lt;h3&gt;&lt;?php echo $this-&gt;escapeHtml($post-&gt;getWrittenOn()); ?&gt;&lt;/h3&gt;
+    &lt;p&gt;&lt;?php echo $this-&gt;escapeHtml($post-&gt;getPreview()); ?&gt;&lt;/p&gt;
+&lt;?php endforeach; ?&gt;</code></pre></p>
