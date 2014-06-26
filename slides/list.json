@@ -128,6 +128,6 @@
     "view/view-script-features/020-view-helpers.html",
     "view/view-script-features/030-view-helpers-setup.html",
 
-    "view/view-exercise/010-writing-the-blog-edit-view.html",
-    "view/view-exercise/020-writing-the-blog-edit-view-solution.html"
+    "view/view-exercise/010-writing-the-blog-list-view.html",
+    "view/view-exercise/020-writing-the-blog-list-view-solution.html"
 ]
