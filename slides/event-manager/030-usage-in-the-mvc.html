@@ -1,0 +1,9 @@
+<p>Where is <code>Zend\EventManager</code> used in <code>Zend\Mvc</code>?</p>
+
+<ul>
+    <li class="fragment">Events are triggered during bootstrap procedures (to allow customization)</li>
+    <li class="fragment">Routing is just a listener, an event is triggered to allow changing the outcome or catching errors</li>
+    <li class="fragment">Controller execution is just a part of a "dispatch" listener</li>
+    <li class="fragment">The entire view layer can be skipped just by stopping propagation of an event</li>
+    <li class="fragment">And so on... there are a lot!</li>
+</ul>

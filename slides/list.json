@@ -30,6 +30,8 @@
     "event-manager/propagation/020-callback-stopping-event-propagation.html",
 
     "event-manager/020-links.html",
+    "event-manager/030-usage-in-the-mvc.html",
+    "event-manager/040-usage-in-the-mvc-2.html",
 
     "service-manager/010-the-zendservicemanager.html",
 
