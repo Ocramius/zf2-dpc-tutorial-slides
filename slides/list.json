@@ -57,6 +57,9 @@
     "service-manager/service-types/070-initializers.html",
     "service-manager/service-types/080-delegators.html",
 
+    "service-manager/020-the-zendservicemanager-in-the-mvc.html",
+    "service-manager/030-the-zendservicemanager-in-the-mvc-2.html",
+
     "module-manager/modulemanager-intro.html",
     "module-manager/modulemanager-1.html",
     "module-manager/modulemanager-2.html",
