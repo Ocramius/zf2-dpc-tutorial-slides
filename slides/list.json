@@ -108,6 +108,21 @@
     "exercise-2/exercise-2-code-3.html",
     "exercise-2/exercise-2-code-4.html",
     "exercise-2/exercise-2-code-5.html",
-    "exercise-2/exercise-2-code-6.html"
+    "exercise-2/exercise-2-code-6.html",
 
+
+    "view/010-the-view-layer.html",
+
+    "view/view-scripts/010-what-are-view-scripts.html",
+    "view/view-scripts/020-view-script-resolution.html",
+    "view/view-scripts/030-view-scripts-configuration.html",
+    "view/view-scripts/040-view-paths.html",
+    "view/view-scripts/050-creating-a-view-script.html",
+
+    "view/view-script-features/010-view-script-variables.html",
+    "view/view-script-features/020-view-helpers.html",
+    "view/view-script-features/030-view-helpers-setup.html",
+
+    "view/view-exercise/010-writing-the-blog-edit-view.html",
+    "view/view-exercise/020-writing-the-blog-edit-view-solution.html"
 ]
