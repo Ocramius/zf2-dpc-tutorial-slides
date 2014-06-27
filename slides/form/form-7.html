@@ -4,7 +4,7 @@
     $form = new PostForm();
     $ghostbuster = new Ghostbuster();
     $form->setHydrator(new ClassMethods())->setObject($ghostbuster);
-    //hydation rocks!
+    //hydration rocks!
     if ($this->getRequest()->isPost()) { // form has been posted
         $form->setData($this->getRequest()->getPost()->toArray());
         if($form->isValid()) { // form validates so save it!
