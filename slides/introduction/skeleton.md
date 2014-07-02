@@ -1,2 +1,2 @@
-![Skeleton App](/images/skeleton.png)
+![Skeleton App](images/skeleton.png)
  \o/
