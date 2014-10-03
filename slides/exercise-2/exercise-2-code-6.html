@@ -22,7 +22,7 @@ class BlogController extends AbstractActionController
     /**
     * @var PostService
     */
-    protected $postService;
+    private $postService;
 
     function __construct(PostService $postService)
     {
