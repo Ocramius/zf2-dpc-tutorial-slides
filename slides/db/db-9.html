@@ -8,9 +8,9 @@ $ghostbuster = $hydrator->hydrate($data, new Ghostbuster());</code></pre>
 <p>Entity:</p>
 <pre><code>class Ghostbuster
 {
-    protected $name;
-    protected $type;
-    protected $captures;
+    private $name;
+    private $type;
+    private $captures;
 
     public function setCaptures($captures)
     {

@@ -10,7 +10,7 @@ class PostService
     /**
     * @var TableGateway
     */
-    protected $postTable;
+    private $postTable;
 
     function __construct(TableGateway $postTable)
     {
